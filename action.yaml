@@ -28,7 +28,7 @@ runs:
       with:
         aws-access-key-id: ${{ inputs.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ secrets.AWS_REGION }}
+        aws-region: ${{ inputs.AWS_REGION }}
 
     - name: Configure kubectl context
       shell: bash

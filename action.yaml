@@ -23,7 +23,7 @@ runs:
   using: 'composite'
   steps:
 
-    - name: Configure AWS credentials
+    - name: Configure AWS credentials-v1
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ inputs.AWS_ACCESS_KEY }}
